@@ -10,7 +10,7 @@ const App = () => {
 
 		const parsedData = window.Telegram.Utils.urlParseQueryString(window.Telegram.WebApp.initData)
 
-		console.log(parsedData)
+		console.log(JSON.stringify(parsedData))
 	}, [])
 	return (
 		<div style={{ width: '100%', color: "#fff", textAlign: "center", fontSize: "50px" }}>
