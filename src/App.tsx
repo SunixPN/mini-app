@@ -9,9 +9,7 @@ const App = () => {
 		console.log(tg.initDataUnsafe, window.Telegram, window)
 
 		console.log(JSON.stringify({
-			id: tg.initDataUnsafe.user.id,
-			first_name: tg.initDataUnsafe.user.first_name,
-			auth_date: tg.initDataUnsafe.auth_date,
+			...tg.initDataUnsafe.user,
 			hash: tg.initDataUnsafe.hash
 		}))
 	}, [])
