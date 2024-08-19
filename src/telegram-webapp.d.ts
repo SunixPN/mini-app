@@ -20,11 +20,18 @@ interface TelegramWebApp  {
             last_name: string,
             username: string
         }
+    },
+
+    initData: {
+        
     }
 }
 
 interface Telegram {
-    WebApp: TelegramWebApp
+    WebApp: TelegramWebApp,
+    Utils: {
+        urlParseQueryString: Function
+    }
 }
 
 interface Window {

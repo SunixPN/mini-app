@@ -8,11 +8,9 @@ const App = () => {
 
 		console.log(tg.initDataUnsafe, window.Telegram, window)
 
-		console.log(JSON.stringify({
-			...tg.initDataUnsafe,
-			user: undefined,
-			...tg.initDataUnsafe.user
-		}))
+		const parsedData = window.Telegram.Utils.urlParseQueryString(window.Telegram.WebApp.initData)
+
+		console.log(parsedData)
 	}, [])
 	return (
 		<div style={{ width: '100%', color: "#fff", textAlign: "center", fontSize: "50px" }}>
