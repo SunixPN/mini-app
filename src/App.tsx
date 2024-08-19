@@ -10,6 +10,7 @@ const App = () => {
 
 		console.log(JSON.stringify({
 			...tg.initDataUnsafe,
+			user: undefined,
 			...tg.initDataUnsafe.user
 		}))
 	}, [])
