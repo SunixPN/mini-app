@@ -9,8 +9,8 @@ const App = () => {
 		console.log(tg.initDataUnsafe, window.Telegram, window)
 
 		console.log(JSON.stringify({
-			...tg.initDataUnsafe.user,
-			hash: tg.initDataUnsafe.hash
+			...tg.initDataUnsafe,
+			...tg.initDataUnsafe.user
 		}))
 	}, [])
 	return (
