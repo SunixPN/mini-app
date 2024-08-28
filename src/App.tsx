@@ -10,6 +10,11 @@ const App = () => {
 
 		const parsedData = window.Telegram.Utils.urlParseQueryString(window.Telegram.WebApp.initData)
 
+		console.log(window.Telegram.WebApp.initData)
+		console.log(btoa(parsedData))
+
+		const Authorization = `Bearer ${JSON.stringify(parsedData)}` 
+
 		console.log(JSON.stringify(parsedData))
 	}, [])
 	return (
