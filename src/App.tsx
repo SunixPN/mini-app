@@ -13,7 +13,7 @@ const App = () => {
 		console.log(window.Telegram.WebApp.initData)
 		console.log(btoa(parsedData))
 
-		const Authorization = `Bearer ${JSON.stringify(parsedData)}` 
+		// const Authorization = `Bearer ${JSON.stringify(parsedData)}` 
 
 		console.log(JSON.stringify(parsedData))
 	}, [])
